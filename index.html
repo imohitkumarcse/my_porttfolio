@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Kumar | Web Developer • AI & Backend Development • AI Automation</title>
+  
+  <!-- SEO & Meta -->
+  <meta name="description" content="Portfolio of Mohit Kumar — CSE undergraduate at GL Bajaj (AKTU) specializing in AI-integrated backend systems, web development, and workflow automation." />
+  <meta name="keywords" content="Mohit Kumar, Web Developer, AI Backend, AI Automation, FastAPI, React, Next.js, n8n, Gemini API, GL Bajaj, AKTU" />
+  <meta name="author" content="Mohit Kumar" />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Fonts: Plus Jakarta Sans, Space Grotesk, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23090d16'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>MK</text></svg>" />
+</head>
+<body>
+
+  <!-- Background Grid Pattern -->
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+
+  <!-- Sticky Main Navigation -->
+  <header class="navbar-wrapper">
+    <div class="site-container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#hero" class="brand-link" aria-label="Mohit Kumar Homepage">
+          <span class="brand-badge">MK</span>
+          <span class="brand-details">
+            <span class="brand-name">Mohit Kumar</span>
+            <span class="brand-title">Web & AI Developer</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#education" class="nav-item">Education</a></li>
+          <li><a href="#workshop" class="nav-item">Workshop</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+
+        <!-- Navigation Actions -->
+        <div class="nav-actions">
+          <button class="btn btn-secondary btn-sm" id="btn-open-resume" aria-label="Open or Print Resume">
+            <i class="fa-solid fa-file-pdf"></i> Resume
+          </button>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <span>Get in Touch</span>
+          </a>
+          <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-item">About</a></li>
+      <li><a href="#skills" class="mobile-nav-item">Technical Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-item">Featured Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-item">Development Experience</a></li>
+      <li><a href="#education" class="mobile-nav-item">Education</a></li>
+      <li><a href="#workshop" class="mobile-nav-item">Paytm AI Workshop</a></li>
+      <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <button class="btn btn-secondary w-full mb-3" id="mobile-resume-btn">
+        <i class="fa-solid fa-file-pdf"></i> View / Print Resume
+      </button>
+      <a href="#contact" class="btn btn-primary w-full">Contact Mohit</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="site-container hero-container">
+        
+        <div class="hero-content">
+          <!-- Identity Badge -->
+          <div class="role-pill">
+            <span class="role-pill-dot"></span>
+            <span>Web Developer | AI & Backend Development | AI Automation</span>
+          </div>
+
+          <!-- Name & Headline -->
+          <h1 class="hero-name">MOHIT KUMAR</h1>
+          <p class="hero-headline">
+            Building production-style <span class="text-accent">FastAPI backends</span>, <span class="text-accent">React/Next.js web apps</span>, and <span class="text-accent">LLM automation pipelines</span>.
+          </p>
+
+          <!-- Resume Summary -->
+          <p class="hero-summary">
+            CSE undergraduate specializing in AI-integrated backend systems, web development, and workflow automation. Comfortable owning technical features end-to-end: API design, database integration, responsive frontend development, deployment, and debugging.
+          </p>
+
+          <!-- Verified Links & Contact Row -->
+          <div class="hero-meta-row">
+            <span class="meta-tag"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (Pursuing)</span>
+            <span class="meta-tag"><i class="fa-solid fa-building-columns"></i> GL Bajaj Institute of Technology And Management (AKTU)</span>
+            <span class="meta-tag"><i class="fa-solid fa-location-dot"></i> Greater Noida / New Delhi, India</span>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-md">
+              <i class="fa-solid fa-code"></i>
+              <span>View Projects</span>
+            </a>
+            <button class="btn btn-secondary btn-md" id="hero-resume-trigger">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download / Print Resume</span>
+            </button>
+            <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-md" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/mohitkumarcse" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-md" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Technical Card (Code / Architecture Summary) -->
+        <div class="hero-terminal-card" aria-hidden="true">
+          <div class="terminal-bar">
+            <div class="term-dots">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+            </div>
+            <span class="term-title">mohit_kumar.ts — Profile Matrix</span>
+          </div>
+          <div class="terminal-body">
+            <pre><code><span class="c-keyword">interface</span> <span class="c-type">DeveloperProfile</span> {
+  <span class="c-prop">name</span>: <span class="c-str">"Mohit Kumar"</span>;
+  <span class="c-prop">status</span>: <span class="c-str">"B.Tech CSE @ GL Bajaj (AKTU)"</span>;
+  <span class="c-prop">focus</span>: [
+    <span class="c-str">"AI & Backend Systems"</span>,
+    <span class="c-str">"Next.js / React Web Apps"</span>,
+    <span class="c-str">"Workflow Automation (n8n)"</span>,
+    <span class="c-str">"LLM Tools (Gemini API)"</span>
+  ];
+  <span class="c-prop">coreStack</span>: {
+    <span class="c-prop">languages</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"JavaScript"</span>, <span class="c-str">"C++"</span>],
+    <span class="c-prop">backend</span>: [<span class="c-str">"FastAPI"</span>, <span class="c-str">"REST APIs"</span>, <span class="c-str">"Tesseract OCR"</span>],
+    <span class="c-prop">frontend</span>: [<span class="c-str">"React.js"</span>, <span class="c-str">"Next.js"</span>, <span class="c-str">"HTML/CSS"</span>],
+    <span class="c-prop">databases</span>: [<span class="c-str">"SQLite"</span>, <span class="c-str">"Firebase/Firestore"</span>]
+  };
+  <span class="c-prop">openForOpportunities</span>: <span class="c-bool">true</span>;
+}</code></pre>
+          </div>
+          <div class="terminal-footer">
+            <div class="tf-left">
+              <span class="tf-indicator"></span>
+              <span>Available for Software Development & AI/ML Roles</span>
+            </div>
+            <a href="#contact" class="tf-link">Contact <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section id="about" class="section-padding">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">01. Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Narrative -->
+          <div class="about-narrative">
+            <p class="lead-text">
+              I am a <strong>Computer Science & Engineering undergraduate</strong> at <strong>GL Bajaj Institute Of Technology And Management (AKTU)</strong>, specializing in AI-integrated backend systems, web development, and workflow automation.
+            </p>
+            <p>
+              My technical work focuses on designing and implementing production-style <strong>FastAPI services</strong>, responsive <strong>React and Next.js</strong> web applications, LLM-powered utilities using the <strong>Gemini API</strong>, and robust automation pipelines with <strong>n8n</strong> that bridge real-world data sources.
+            </p>
+            <p>
+              I take pride in owning technical features end-to-end: from initial API and database design, through client-side component architecture, to cloud deployment on platforms like <strong>Vercel</strong> and <strong>Cloudflare</strong>, followed by continuous debugging and optimization.
+            </p>
+
+            <div class="about-focus-pills">
+              <div class="focus-pill">
+                <i class="fa-solid fa-server"></i>
+                <div>
+                  <strong>Backend & AI Systems</strong>
+                  <span>FastAPI, RESTful APIs, Tesseract OCR, Gemini API</span>
+                </div>
+              </div>
+              <div class="focus-pill">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                  <strong>Modern Web Development</strong>
+                  <span>React.js, Next.js, JavaScript, HTML/CSS</span>
+                </div>
+              </div>
+              <div class="focus-pill">
+                <i class="fa-solid fa-gears"></i>
+                <div>
+                  <strong>Workflow Automation</strong>
+                  <span>n8n, Webhooks, Telegram, Cloudflare, Google Workspace</span>
+                </div>
+              </div>
+              <div class="focus-pill">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                  <strong>Hardware Ingestion & Security</strong>
+                  <span>ESP32, ESP32-CAM, OSINT Fundamentals, Evidence Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Professional Summary Card -->
+          <div class="profile-card">
+            <div class="profile-card-header">
+              <div class="avatar-ring">
+                <span>MK</span>
+              </div>
+              <div>
+                <h3 class="p-name">Mohit Kumar</h3>
+                <span class="p-role">CSE Undergraduate</span>
+              </div>
+            </div>
+
+            <div class="profile-meta-list">
+              <div class="p-meta-item">
+                <span class="p-label">Degree</span>
+                <span class="p-value">B.Tech, Computer Science & Engineering</span>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">Institution</span>
+                <span class="p-value">GL Bajaj Institute Of Technology And Management (AKTU)</span>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">Status</span>
+                <span class="p-value highlight-status">Pursuing</span>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">Email</span>
+                <a href="mailto:imohitkumarcse@gmail.com" class="p-link">imohitkumarcse@gmail.com</a>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">Phone</span>
+                <a href="tel:+919208341049" class="p-link">+91 92083 41049</a>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">GitHub</span>
+                <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="p-link">github.com/imohitkumarcse</a>
+              </div>
+              <div class="p-meta-item">
+                <span class="p-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/mohitkumarcse" target="_blank" rel="noopener noreferrer" class="p-link">linkedin.com/in/mohitkumarcse</a>
+              </div>
+            </div>
+
+            <div class="profile-card-cta">
+              <a href="#contact" class="btn btn-primary w-full">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. TECHNICAL SKILLS ==================== -->
+    <section id="skills" class="section-padding bg-surface">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">02. Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Organized strictly according to my verified curriculum vitae.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Languages -->
+          <div class="skill-category">
+            <div class="sc-head">
+              <i class="fa-solid fa-code sc-icon"></i>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">C++</span>
+            </div>
+          </div>
+
+          <!-- 2. Backend & AI -->
+          <div class="skill-category">
+            <div class="sc-head">
+              <i class="fa-solid fa-brain sc-icon"></i>
+              <h3>Backend & AI</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">Gemini API</span>
+              <span class="skill-badge">LangChain (workshop)</span>
+              <span class="skill-badge">Tesseract OCR</span>
+            </div>
+          </div>
+
+          <!-- 3. Frontend & Data -->
+          <div class="skill-category">
+            <div class="sc-head">
+              <i class="fa-solid fa-window-maximize sc-icon"></i>
+              <h3>Frontend & Data</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">React.js</span>
+              <span class="skill-badge">Next.js</span>
+              <span class="skill-badge">HTML/CSS</span>
+              <span class="skill-badge">SQLite</span>
+              <span class="skill-badge">Firebase/Firestore</span>
+            </div>
+          </div>
+
+          <!-- 4. Automation & DevOps -->
+          <div class="skill-category">
+            <div class="sc-head">
+              <i class="fa-solid fa-gears sc-icon"></i>
+              <h3>Automation & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">n8n</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Vercel</span>
+              <span class="skill-badge">Cloudflare</span>
+              <span class="skill-badge">VS Code</span>
+            </div>
+          </div>
+
+          <!-- 5. Hardware & Security -->
+          <div class="skill-category">
+            <div class="sc-head">
+              <i class="fa-solid fa-microchip sc-icon"></i>
+              <h3>Hardware & Security</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge">ESP32</span>
+              <span class="skill-badge">ESP32-CAM</span>
+              <span class="skill-badge">OSINT Fundamentals</span>
+              <span class="skill-badge">Evidence Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. PROJECTS ==================== -->
+    <section id="projects" class="section-padding">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">03. Portfolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Production-style systems, automation platforms, and full-stack web applications from my resume.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 1 (Featured): ARC-CORE -->
+          <article class="project-card featured-project">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-pill featured-pill"><i class="fa-solid fa-star"></i> Featured System</span>
+                <span class="project-tech-header">Python • FastAPI • React • SQLite • Tesseract OCR</span>
+              </div>
+              <h3 class="project-name">ARC-CORE — AI Evidence Intelligence System</h3>
+            </div>
+
+            <p class="project-desc">
+              An intelligent, end-to-end evidence processing platform designed to ingest multi-source documents and hardware feeds, perform automated OCR text extraction, and analyze critical case data for investigative workflows.
+            </p>
+
+            <div class="project-bullet-points">
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Automated Case-Evidence Processing:</strong> Built a FastAPI + SQLite backend integrating a Tesseract OCR pipeline for automated text extraction across document test sets.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Structured Intelligence Extraction:</strong> Implemented structured extraction of emails, phone numbers, and URLs combined with rule-based risk scoring to significantly reduce manual data-entry time for investigators.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Forward-Compatible Hardware Ingestion:</strong> Designed and verified ESP32-CAM integration into the evidence pipeline architecture, validating end-to-end capture-to-dashboard test runs.</p>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-pills">
+                <span>FastAPI</span>
+                <span>Python</span>
+                <span>React</span>
+                <span>SQLite</span>
+                <span>Tesseract OCR</span>
+                <span>ESP32-CAM</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: NukkadNova -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-pill">Automation</span>
+                <span class="project-tech-header">n8n • Gmail API • Google Sheets • Telegram • Cloudflare</span>
+              </div>
+              <h3 class="project-name">NukkadNova — Business Automation Platform</h3>
+            </div>
+
+            <p class="project-desc">
+              A comprehensive operational automation platform connecting web lead intake with real-time internal notification and data synchronization channels.
+            </p>
+
+            <div class="project-bullet-points">
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Lead Response Reduction:</strong> Engineered automated n8n workflows connecting web forms, Google Sheets, Gmail, and Telegram for rapid lead capture and automated client updates.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Reliability & Centralized Error Handling:</strong> Achieved continuous high uptime with zero missed-reminder incidents over multiple weeks by implementing centralized error handling across all automation branches and deploying infrastructure via GitHub and Cloudflare.</p>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-pills">
+                <span>n8n</span>
+                <span>Gmail API</span>
+                <span>Google Sheets</span>
+                <span>Telegram API</span>
+                <span>Cloudflare</span>
+                <span>GitHub</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: AI Study & Examination Automation -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-pill">AI / EdTech</span>
+                <span class="project-tech-header">Gemini API • Google Apps Script • Google Forms • Sheets</span>
+              </div>
+              <h3 class="project-name">AI Study & Examination Automation</h3>
+            </div>
+
+            <p class="project-desc">
+              An LLM-driven educational automation system designed to eliminate manual exam preparation overhead through automated prompt parsing and instant form generation.
+            </p>
+
+            <div class="project-bullet-points">
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Rapid Unit-Wise Test Generation:</strong> Enabled automatic generation of unit-wise practice tests in under minutes per unit by integrating the Gemini API with Google Apps Script to auto-create, populate, and organize test links into published Google Forms.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>API Compatibility & Recovery:</strong> Resolved recurring API authentication and model-compatibility failures by debugging execution-time issues and designing recurring validation tests with targeted recovery practice.</p>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-pills">
+                <span>Gemini API</span>
+                <span>Google Apps Script</span>
+                <span>Google Forms</span>
+                <span>Google Sheets</span>
+                <span>Prompt Engineering</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Habit Garden -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-pill">Web Application</span>
+                <span class="project-tech-header">Next.js • JavaScript • Vercel</span>
+              </div>
+              <h3 class="project-name">Habit Garden — Productivity Web App</h3>
+            </div>
+
+            <p class="project-desc">
+              A fully deployed, publicly accessible habit-tracking web application built to encourage consistency through intuitive task and routine tracking.
+            </p>
+
+            <div class="project-bullet-points">
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>End-to-End Product Engineering:</strong> Developed Habit Garden end-to-end, including the user-facing interface, habit/task data model, application logic, and production deployment.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Continuous Deployment & Scaling:</strong> Shipped a publicly accessible application supporting concurrent users with a CI-driven deployment pipeline on Vercel.</p>
+              </div>
+              <div class="bullet-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <p><strong>Version Control Workflow:</strong> Utilized Git/GitHub and Vercel-based workflows to manage source code, iterative feature development, and production releases.</p>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="tech-pills">
+                <span>Next.js</span>
+                <span>React.js</span>
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>Vercel</span>
+                <span>Git/GitHub</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="link-item">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. DEVELOPMENT EXPERIENCE ==================== -->
+    <section id="experience" class="section-padding bg-surface">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">04. Hands-On Background</span>
+          <h2 class="section-title">Web Development Experience</h2>
+          <p class="section-desc">Frontend & Full-Stack Development practices verified from my curriculum vitae.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="experience-card">
+          <div class="exp-header">
+            <div>
+              <span class="exp-badge">Frontend & Full-Stack Development</span>
+              <h3 class="exp-title">Hands-On Engineering Practice & Application Delivery</h3>
+            </div>
+            <span class="exp-tech-tag">Next.js • React.js • JavaScript • HTML/CSS • Firebase/Firestore • Vercel</span>
+          </div>
+
+          <div class="exp-body">
+            <div class="exp-point">
+              <div class="point-marker"></div>
+              <div>
+                <h4>Version Control & Continuous Delivery Workflows</h4>
+                <p>Used Git/GitHub and Vercel-based workflows to manage source code, iterative development cycles, branch management, and production web application releases.</p>
+              </div>
+            </div>
+
+            <div class="exp-point">
+              <div class="point-marker"></div>
+              <div>
+                <h4>API & Cloud Services Integration</h4>
+                <p>Integrated frontend applications with backend APIs and cloud services, with hands-on experience in user authentication, structured data storage, environment deployment, and debugging.</p>
+              </div>
+            </div>
+
+            <div class="exp-point">
+              <div class="point-marker"></div>
+              <div>
+                <h4>End-to-End Product Architecture</h4>
+                <p>Developed full applications end-to-end (such as Habit Garden), including designing user-facing interfaces, habit/task data models, application logic, and production deployment.</p>
+              </div>
+            </div>
+
+            <div class="exp-point">
+              <div class="point-marker"></div>
+              <div>
+                <h4>Responsive Web Standards</h4>
+                <p>Built and deployed responsive web applications using Next.js, React.js, modern JavaScript (ES6+), semantic HTML5/CSS3, and cloud persistence with Firebase/Firestore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. EDUCATION ==================== -->
+    <section id="education" class="section-padding">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">05. Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="edu-details">
+            <div class="edu-top">
+              <h3 class="edu-degree">B.Tech, Computer Science & Engineering</h3>
+              <span class="edu-status">Pursuing</span>
+            </div>
+            <h4 class="edu-institution">GL Bajaj Institute Of Technology And Management (AKTU)</h4>
+            <p class="edu-desc">
+              Undergraduate program emphasizing core computer science fundamentals, data structures, algorithms, software engineering principles, web technologies, and systems engineering.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. WORKSHOP & TECHNICAL EXPOSURE ==================== -->
+    <section id="workshop" class="section-padding bg-surface">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">06. Exposure</span>
+          <h2 class="section-title">Workshop & Technical Exposure</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="workshop-card">
+          <div class="workshop-header">
+            <div class="ws-title-group">
+              <span class="ws-badge"><i class="fa-solid fa-award"></i> Live Build Setting</span>
+              <h3 class="ws-title">AI Builder Workshop</h3>
+              <span class="ws-venue"><i class="fa-solid fa-location-dot"></i> Paytm Office, Noida</span>
+            </div>
+            <span class="ws-year">2026</span>
+          </div>
+
+          <div class="workshop-content">
+            <p>
+              Applied agentic AI observability and LangChain-based workflow tracing to prototype a <strong>“Student Opportunity OS”</strong> concept, evaluating AI application security practices (<strong>Model Armor</strong>) in a live build setting.
+            </p>
+            <div class="ws-tags">
+              <span>Agentic AI Observability</span>
+              <span>LangChain Workflow Tracing</span>
+              <span>Student Opportunity OS</span>
+              <span>Model Armor AI Security</span>
+              <span>Paytm Office, Noida</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. CONTACT ==================== -->
+    <section id="contact" class="section-padding">
+      <div class="site-container">
+        
+        <div class="section-header">
+          <span class="section-tag">07. Communication</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-desc">Open to software developer internships, AI/ML opportunities, web roles, and technical collaborations.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Methods (Strictly from Resume) -->
+          <div class="contact-info-panel">
+            <h3 class="panel-heading">Direct Contact Information</h3>
+            <p class="panel-sub">
+              Feel free to reach out via phone, direct email, or connect via GitHub and LinkedIn.
+            </p>
+
+            <div class="contact-list">
+              <!-- Email -->
+              <div class="c-item" id="copy-email-box">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-texts">
+                  <span class="c-label">Email Address</span>
+                  <a href="mailto:imohitkumarcse@gmail.com" class="c-val">imohitkumarcse@gmail.com</a>
+                </div>
+                <button class="c-copy-btn" title="Copy email address" aria-label="Copy Email"><i class="fa-solid fa-copy"></i></button>
+              </div>
+
+              <!-- Phone -->
+              <div class="c-item" id="copy-phone-box">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-texts">
+                  <span class="c-label">Phone</span>
+                  <a href="tel:+919208341049" class="c-val">+91 92083 41049</a>
+                </div>
+                <button class="c-copy-btn" title="Copy phone number" aria-label="Copy Phone"><i class="fa-solid fa-copy"></i></button>
+              </div>
+
+              <!-- GitHub -->
+              <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer" class="c-item">
+                <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="c-texts">
+                  <span class="c-label">GitHub Profile</span>
+                  <span class="c-val">github.com/imohitkumarcse</span>
+                </div>
+                <span class="c-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/mohitkumarcse" target="_blank" rel="noopener noreferrer" class="c-item">
+                <div class="c-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="c-texts">
+                  <span class="c-label">LinkedIn Profile</span>
+                  <span class="c-val">linkedin.com/in/mohitkumarcse</span>
+                </div>
+                <span class="c-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+
+              <!-- Academic Location -->
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="c-texts">
+                  <span class="c-label">Academic Institution</span>
+                  <span class="c-val">GL Bajaj Institute of Technology And Management (AKTU), Greater Noida / Delhi NCR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Message Trigger -->
+          <div class="contact-action-panel">
+            <h3 class="panel-heading">Send a Message</h3>
+            <p class="panel-sub">
+              Compose a message that opens directly in your email client addressed to <strong>imohitkumarcse@gmail.com</strong>.
+            </p>
+
+            <form id="direct-email-form" class="direct-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" required placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label for="form-subject">Subject</label>
+                  <input type="text" id="form-subject" required placeholder="Opportunity / Project Discussion" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-body">Message</label>
+                <textarea id="form-body" rows="5" required placeholder="Hi Mohit, I reviewed your ARC-CORE and NukkadNova projects and would like to connect regarding..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full btn-md">
+                <i class="fa-solid fa-paper-plane"></i> Launch Email Draft
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== RESUME MODAL & PRINT VIEW ==================== -->
+  <div class="resume-modal" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="resume-doc-title">
+    <div class="modal-backdrop" id="resume-modal-backdrop"></div>
+    <div class="modal-container">
+      
+      <!-- Modal Titlebar -->
+      <div class="modal-titlebar">
+        <div class="mt-left">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span id="resume-doc-title">Mohit Kumar — Curriculum Vitae</span>
+        </div>
+        <div class="mt-actions">
+          <button class="btn btn-primary btn-sm" id="modal-print-btn">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+          </button>
+          <button class="modal-close-icon" id="modal-close-btn" aria-label="Close resume view">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Resume Paper Body (Exact Replica of Resume) -->
+      <div class="modal-paper" id="resume-document">
+        
+        <header class="res-head">
+          <h1 class="res-name">MOHIT KUMAR</h1>
+          <p class="res-sub">Web Developer | AI & Backend Development | AI Automation</p>
+          <div class="res-contact-bar">
+            <span>+91 92083 41049</span>
+            <span>•</span>
+            <a href="mailto:imohitkumarcse@gmail.com">imohitkumarcse@gmail.com</a>
+            <span>•</span>
+            <a href="https://github.com/imohitkumarcse" target="_blank" rel="noopener noreferrer">github.com/imohitkumarcse</a>
+            <span>•</span>
+            <a href="https://linkedin.com/in/mohitkumarcse" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohitkumarcse</a>
+          </div>
+        </header>
+
+        <section class="res-sec">
+          <h2 class="res-sec-title">SUMMARY</h2>
+          <p class="res-sec-body">
+            CSE undergraduate specializing in AI-integrated backend systems, web development, and workflow automation. Builds production-style FastAPI services, React/Next.js web applications, LLM-powered tools, and automation pipelines that connect real-world data sources. Comfortable owning features end-to-end: API design, database integration, responsive frontend development, deployment, and debugging.
+          </p>
+        </section>
+
+        <section class="res-sec">
+          <h2 class="res-sec-title">EDUCATION</h2>
+          <div class="res-item">
+            <div class="res-item-row">
+              <strong>B.Tech, Computer Science & Engineering — GL Bajaj Institute Of Technology And Management (AKTU)</strong>
+              <span>Pursuing</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="res-sec">
+          <h2 class="res-sec-title">TECHNICAL SKILLS</h2>
+          <div class="res-skills-table">
+            <div class="rst-row">
+              <span class="rst-label">Languages</span>
+              <span class="rst-val">Python, JavaScript, C++</span>
+            </div>
+            <div class="rst-row">
+              <span class="rst-label">Backend & AI</span>
+              <span class="rst-val">FastAPI, REST APIs, Gemini API, LangChain (workshop), Tesseract OCR</span>
+            </div>
+            <div class="rst-row">
+              <span class="rst-label">Frontend & Data</span>
+              <span class="rst-val">React.js, Next.js, HTML/CSS, SQLite, Firebase/Firestore</span>
+            </div>
+            <div class="rst-row">
+              <span class="rst-label">Automation & DevOps</span>
+              <span class="rst-val">n8n, Git/GitHub, Vercel, Cloudflare, VS Code</span>
+            </div>
+            <div class="rst-row">
+              <span class="rst-label">Hardware & Security</span>
+              <span class="rst-val">ESP32, ESP32-CAM, OSINT Fundamentals, Evidence Analysis</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="res-sec">
+          <h2 class="res-sec-title">PROJECTS</h2>
+
+          <div class="res-project">
+            <div class="res-item-row">
+              <strong>ARC-CORE — AI Evidence Intelligence System</strong>
+            </div>
+            <div class="res-sub-tech">Python, FastAPI, React, SQLite, Tesseract OCR</div>
+            <ul class="res-bullets">
+              <li>Accomplished automated case-evidence processing at high extraction accuracy by building a FastAPI + SQLite backend with a Tesseract OCR pipeline for text extraction.</li>
+              <li>Accomplished a significant reduction in manual data-entry time for investigators by implementing structured extraction of emails, phone numbers, and URLs plus rule-based risk scoring.</li>
+              <li>Accomplished forward-compatible hardware ingestion, as measured by successful end-to-end capture-to-dashboard test runs, by designing ESP32-CAM integration into the evidence pipeline architecture.</li>
+            </ul>
+          </div>
+
+          <div class="res-project">
+            <div class="res-item-row">
+              <strong>NukkadNova — Business Automation Platform</strong>
+            </div>
+            <div class="res-sub-tech">n8n, Gmail API, Google Sheets, Telegram, Cloudflare</div>
+            <ul class="res-bullets">
+              <li>Accomplished a substantial reduction in lead-response time by building n8n workflows connecting web forms, Google Sheets, Gmail, and Telegram for lead capture and client updates.</li>
+              <li>Accomplished high uptime with zero missed-reminder incidents over extended execution logs by implementing centralized error handling across all automation branches and deploying infrastructure via GitHub and Cloudflare.</li>
+            </ul>
+          </div>
+
+          <div class="res-project">
+            <div class="res-item-row">
+              <strong>AI Study & Examination Automation</strong>
+            </div>
+            <div class="res-sub-tech">Gemini API, Google Apps Script, Google Forms, Sheets</div>
+            <ul class="res-bullets">
+              <li>Accomplished automatic generation of unit-wise practice tests in under minutes per unit by integrating the Gemini API with Google Apps Script to auto-create and organize test links.</li>
+              <li>Accomplished resolution of recurring API authentication and model-compatibility failures by debugging execution-time issues and designing recurring tests with targeted recovery practice.</li>
+            </ul>
+          </div>
+
+          <div class="res-project">
+            <div class="res-item-row">
+              <strong>Habit Garden — Productivity Web App</strong>
+            </div>
+            <div class="res-sub-tech">Next.js, JavaScript, Vercel</div>
+            <ul class="res-bullets">
+              <li>Accomplished a fully deployed, publicly accessible habit-tracking app supporting concurrent users by designing and shipping the full Next.js frontend, task/habit data model, and CI-driven deployment pipeline.</li>
+              <li>Used Git/GitHub and Vercel-based workflows to manage source code, iterative development, and web application releases.</li>
+              <li>Integrated frontend applications with backend APIs and cloud services, with hands-on experience in authentication, data storage, deployment, and debugging.</li>
+              <li>Developed Habit Garden end-to-end, including the user-facing interface, habit/task data model, application logic, and production deployment.</li>
+              <li>Built and deployed responsive web applications using Next.js, React.js, JavaScript, HTML/CSS, Firebase/Firestore, and Vercel.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="res-sec">
+          <h2 class="res-sec-title">WORKSHOP & TECHNICAL EXPOSURE</h2>
+          <div class="res-item">
+            <div class="res-item-row">
+              <strong>AI Builder Workshop — Paytm Office, Noida</strong>
+              <span>2026</span>
+            </div>
+            <ul class="res-bullets">
+              <li>Applied agentic AI observability and LangChain-based workflow tracing to prototype a “Student Opportunity OS” concept, evaluating AI application security practices (Model Armor) in a live build setting.</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="site-toast" id="site-toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-check-circle toast-icon"></i>
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-content">
+      <div class="footer-left">
+        <span class="footer-name">MOHIT KUMAR</span>
+        <p class="footer-sub">Web Developer | AI & Backend Development | AI Automation • GL Bajaj (AKTU)</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 Mohit Kumar. Source of truth: verified curriculum vitae. Built for developer opportunities.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
