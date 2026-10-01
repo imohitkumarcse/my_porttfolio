@@ -5,7 +5,7 @@
 **Web Developer • AI & Backend Systems • AI Automation**  
 *Computer Science & Engineering — GL Bajaj Institute of Technology And Management (AKTU)*
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live_Portfolio-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://imohitkumarcse.github.io/html_projects/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Portfolio-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://my-porttfolio.onrender.com/)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-imohitkumarcse-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imohitkumarcse)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mohitkumarcse-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohitkumarcse)
 [![Email](https://img.shields.io/badge/Email-imohitkumarcse%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:imohitkumarcse@gmail.com)
@@ -35,7 +35,6 @@
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
-- [Design Philosophy & UI Highlights](#-design-philosophy--ui-highlights)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
 - [Features & Interactive Modules](#-features--interactive-modules)
 - [Portfolio Sections Breakdown](#-portfolio-sections-breakdown)
@@ -70,46 +69,6 @@ The website serves as a single source of truth for all technical capabilities, e
 - **Single Source of Truth:** Every detail (projects, tech stacks, bullet metrics, education) strictly aligns with Mohit's verified curriculum vitae.
 - **High Visual Fidelity:** Obsidian slate theme (`#090d16`), fine borders, cyan/indigo ambient highlights, and clean typography (`Plus Jakarta Sans`, `Space Grotesk`, `JetBrains Mono`).
 - **Zero Framework Overhead:** Instant First Contentful Paint (FCP) and near-zero Total Blocking Time (TBT) through pure HTML/CSS/JS.
-
----
-
-## ✨ Design Philosophy & UI Highlights
-
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│  MK  Mohit Kumar          About  Skills  Projects  Exp  Edu  Contact   │
-├────────────────────────────────────────────────────────────────────────┤
-│                                                                        │
-│  [● Web Developer | AI & Backend | Automation]                         │
-│  MOHIT KUMAR                                    ┌────────────────────┐ │
-│  Building production FastAPI backends,          │ mohit_kumar.ts     │ │
-│  React/Next.js web apps, & LLM pipelines.       │ interface Dev {    │ │
-│                                                 │   status: "AKTU"   │ │
-│  [View Projects] [Print Resume] [GitHub]        │   open: true       │ │
-│                                                 └────────────────────┘ │
-│                                                                        │
-│  01. ABOUT         02. SKILLS          03. PROJECTS       04. CONTACT  │
-│  CSE Undergraduate  Python, FastAPI,   ARC-CORE,          Copy Email   │
-│  GL Bajaj (AKTU)    Next.js, n8n,      NukkadNova,        Direct Mail  │
-│                     Gemini API         Habit Garden       Modal CV     │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
-1. **Obsidian Palette & Glassmorphism:**
-   - Deep background base: `#090d16` (slate obsidian)
-   - Secondary card surfaces: `rgba(15, 23, 42, 0.7)` with `backdrop-filter: blur(12px)`
-   - Subtle accent borders: `rgba(255, 255, 255, 0.08)`
-   - Strategic luminous accents: Electric Cyan (`#38bdf8`) & Soft Indigo (`#818cf8`)
-
-2. **Typography System:**
-   - Primary Body: **Inter / Plus Jakarta Sans** (clean, readable sans-serif)
-   - Section Headings: **Space Grotesk** (engineered, geometric display)
-   - Technical & Code Cards: **JetBrains Mono** (crisp monospaced code styling)
-
-3. **Motion & Interaction Design:**
-   - Smooth anchor scrolling with sticky header offset compensation.
-   - Interactive hover cards with subtle upward lift (`translateY(-4px)`).
-   - Fully respected accessibility via `@media (prefers-reduced-motion: reduce)`.
 
 ---
 
@@ -173,7 +132,7 @@ Organized strictly in accordance with verified curriculum vitae:
   - Implemented structured extraction of emails, phone numbers, and URLs with rule-based risk scoring to drastically cut manual data entry for investigators.
   - Designed forward-compatible hardware ingestion via ESP32-CAM integration, validated through end-to-end capture-to-dashboard test runs.
 
-#### 🔹 [NukkadNova — Business Automation Platform](https://github.com/imohitkumarcse)
+#### 🔹 [NukkadNova — Business Automation Platform](https://github.com/imohitkumarcse/nukkadnova-website)
 - **Stack:** n8n, Gmail API, Google Sheets, Telegram, Cloudflare, GitHub
 - **Highlights:**
   - Engineered automated n8n workflows connecting web lead forms, Google Sheets, Gmail, and Telegram for rapid client outreach.
@@ -185,7 +144,7 @@ Organized strictly in accordance with verified curriculum vitae:
   - Automated unit-wise practice test generation in minutes by integrating Gemini API with Google Apps Script to dynamically populate Google Forms.
   - Resolved recurring API authentication and model-compatibility failures with automated recovery and fallback practice tests.
 
-#### 🔹 [Habit Garden — Productivity Web App](https://github.com/imohitkumarcse)
+#### 🔹 [Habit Garden — Productivity Web App](https://github.com/imohitkumarcse/habit-garden)
 - **Stack:** Next.js, React.js, JavaScript, HTML/CSS, Vercel, Git/GitHub
 - **Highlights:**
   - Developed end-to-end habit tracking application including UI, task/habit data models, and business logic.
@@ -297,7 +256,7 @@ npx serve .
 4. Under **Branch**, select `main` and set folder to `/ (root)`.
 5. Click **Save**. Within 1–2 minutes, your portfolio will be live at:
    ```text
-   https://imohitkumarcse.github.io/html_projects/
+   https://my-porttfolio.onrender.com/
    ```
 
 ### Deploy to Vercel
